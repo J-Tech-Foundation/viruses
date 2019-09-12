@@ -6,5 +6,5 @@ while true
 do
   x=$(date +%N-%S)
   echo "♥">>$x.txt
-  echo $dark_blue $x
+  echo $dark_blue $x $reset
 done
