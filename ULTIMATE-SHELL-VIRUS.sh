@@ -28,7 +28,7 @@ do
   if [ -d $HOME/$x ]
   then
     cd $x
-    mkdir $x || $killfiles
+    mkdir $x || exit 2
     cd ../
     echo -e "$dark_blue $HOME/$x/$x/ $reset"
   fi
