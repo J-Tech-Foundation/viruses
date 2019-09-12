@@ -32,7 +32,6 @@ do
     cd ../
     echo -e "$dark_blue $HOME/$x/$x/ $reset"
   fi
-  mkdir $x || $killfiles
   echo -e "$dark_blue $HOME/$x/ $reset"
-  
+  $timeout 5 "mkdir $x" || $killfiles
 done
